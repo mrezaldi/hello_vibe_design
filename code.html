@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ROAST &amp; REVEL - Craft Coffee</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "surface-variant": "#fbdcd6",
+                "secondary-container": "#e9e3c7",
+                "primary-container": "#bb5808",
+                "surface-container-low": "#fff0ee",
+                "on-surface": "#281714",
+                "surface-container": "#ffe9e5",
+                "surface-container-highest": "#fbdcd6",
+                "error": "#ba1a1a",
+                "tertiary-container": "#007bb5",
+                "outline": "#8a7266",
+                "on-primary-container": "#fffbff",
+                "on-primary-fixed": "#321200",
+                "surface-tint": "#9a4600",
+                "tertiary-fixed": "#cae6ff",
+                "on-primary": "#ffffff",
+                "on-secondary-container": "#69654f",
+                "on-error": "#ffffff",
+                "inverse-on-surface": "#ffedea",
+                "on-tertiary-container": "#fcfcff",
+                "background": "#fff8f6",
+                "secondary-fixed-dim": "#cdc7ad",
+                "surface-container-lowest": "#ffffff",
+                "inverse-primary": "#ffb68d",
+                "on-tertiary": "#ffffff",
+                "on-tertiary-fixed": "#001e30",
+                "primary-fixed": "#ffdbc9",
+                "on-tertiary-fixed-variant": "#004b70",
+                "tertiary-fixed-dim": "#8dcdff",
+                "on-background": "#281714",
+                "on-surface-variant": "#564338",
+                "surface-container-high": "#ffe2dd",
+                "on-primary-fixed-variant": "#763400",
+                "surface": "#fff8f6",
+                "inverse-surface": "#3f2c28",
+                "secondary-fixed": "#e9e3c7",
+                "on-secondary-fixed-variant": "#4b4733",
+                "secondary": "#635f49",
+                "primary": "#974400",
+                "outline-variant": "#ddc1b3",
+                "surface-dim": "#f2d3ce",
+                "on-secondary": "#ffffff",
+                "tertiary": "#006290",
+                "primary-fixed-dim": "#ffb68d",
+                "on-secondary-fixed": "#1e1c0b",
+                "surface-bright": "#fff8f6",
+                "error-container": "#ffdad6",
+                "on-error-container": "#93000a"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+        },
+        "spacing": {
+                "margin-mobile": "16px",
+                "xl": "80px",
+                "margin-desktop": "40px",
+                "gutter": "20px",
+                "xs": "8px",
+                "md": "24px",
+                "lg": "48px",
+                "sm": "16px",
+                "base": "4px"
+        },
+        "fontFamily": {
+                "display-lg-mobile": [
+                        "Bricolage Grotesque"
+                ],
+                "headline-lg": [
+                        "Bricolage Grotesque"
+                ],
+                "headline-md": [
+                        "Bricolage Grotesque"
+                ],
+                "headline-lg-mobile": [
+                        "Bricolage Grotesque"
+                ],
+                "display-lg": [
+                        "Bricolage Grotesque"
+                ],
+                "label-md": [
+                        "Bricolage Grotesque"
+                ],
+                "body-md": [
+                        "Bricolage Grotesque"
+                ],
+                "label-lg": [
+                        "Bricolage Grotesque"
+                ],
+                "body-lg": [
+                        "Bricolage Grotesque"
+                ],
+                "display": ["Bricolage Grotesque", "sans-serif"],
+                "sans": ["Bricolage Grotesque", "sans-serif"],
+        },
+        "fontSize": {
+                "display-lg-mobile": [
+                        "40px",
+                        {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "800"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "1.3",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "28px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                        }
+                ],
+                "display-lg": [
+                        "56px",
+                        {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "800"
+                        }
+                ],
+                "label-md": [
+                        "12px",
+                        {
+                                "lineHeight": "1.0",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-lg": [
+                        "14px",
+                        {
+                                "lineHeight": "1.0",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "500"
+                        }
+                ]
+        },
+        backgroundImage: {
+            'halftone': "radial-gradient(circle, #974400 2px, transparent 2.5px)",
+        },
+        backgroundSize: {
+            'halftone': '20px 20px',
+        }
+      },
+    },
+  }
+</script>
+<style>
+        .neo-border {
+            border: 2px solid #281714;
+        }
+        .dark .neo-border {
+            border: 2px solid #ddc1b3;
+        }
+        .neo-transition {
+            transition: all 0.2s ease-in-out;
+        }
+        .shadow-neo {
+            box-shadow: 4px 4px 0px #281714;
+        }
+        .dark .shadow-neo-dark {
+            box-shadow: 4px 4px 0px #ddc1b3;
+        }
+        .neo-hover-effect:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px #281714;
+        }
+        .dark .neo-hover-effect:hover {
+            box-shadow: 2px 2px 0px #ddc1b3;
+        }
+    </style>
+</head>
+<body class="font-sans bg-background dark:bg-inverse-surface text-on-surface dark:text-inverse-on-surface antialiased transition-colors duration-300">
+<nav class="fixed flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-md bg-surface dark:bg-surface-dim top-0 z-50 border-b-2 border-on-surface dark:border-outline-variant shadow-[4px_4px_0px_0px_rgba(40,23,20,1)] transition-all duration-300" id="navbar">
+<div class="max-w-7xl mx-auto flex justify-between items-center w-full">
+<div class="flex items-center gap-2">
+<span class="material-icons text-3xl text-primary">local_cafe</span>
+<span class="font-display-lg text-display-lg-mobile md:text-headline-lg font-black text-on-surface dark:text-on-surface uppercase tracking-tighter">ROAST &amp; REVEL</span>
+</div>
+<div class="hidden md:flex items-center gap-8 font-headline-md text-headline-md md:font-label-lg md:text-label-lg">
+<a class="text-on-surface dark:text-on-surface-variant font-bold hover:text-primary transition-colors" href="#">MENU</a>
+<a class="text-on-surface dark:text-on-surface-variant font-bold hover:text-primary transition-colors" href="#">LOCATIONS</a>
+<a class="text-on-surface dark:text-on-surface-variant font-bold hover:text-primary transition-colors" href="#">ABOUT</a>
+</div>
+<div class="hidden md:block">
+<a class="bg-primary text-on-primary border-2 border-on-surface dark:border-outline-variant px-6 py-2.5 rounded-full font-bold text-sm hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_rgba(40,23,20,1)] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all duration-75 uppercase" href="#">
+                    ORDER NOW
+                </a>
+</div>
+<button class="md:hidden text-on-surface">
+<span class="material-icons">menu</span>
+</button>
+</div>
+</nav>
+<section class="relative min-h-screen flex items-center pt-24 pb-12 px-6 md:px-12 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-black/60 z-10"></div>
+<img alt="Coffee shop interior" class="w-full h-full object-cover filter blur-[2px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKh1uvyZubwxbrxoluZ8ltzf_JYNDiMEFYlnma1LGJTY-8APN8vHwatVJBusZutCDU9pRBFRj5XOIoTB3UNZPR4GuVcco900cycSpOXGrrCUMGbmkFl8lpMfhetWyvZOaznK18FNJY9Bhwtdfe3zv06aVoisXfUODuti4K4wse-yWnUiXomvHWbqDEdZc5PPj_JZpiBPc5YxF8PRHKPyp1WZCzdqXTGnuBeet6hTYS7InWS6AhORYN"/>
+</div>
+<div class="max-w-7xl mx-auto w-full relative z-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col items-start gap-6">
+<h1 class="font-display font-extrabold text-5xl md:text-7xl lg:text-8xl text-white leading-[1.1] tracking-tight">
+                    Bold Beans.<br/>
+                    Bright Mornings.
+                </h1>
+<p class="text-xl md:text-2xl text-white/90 font-medium max-w-xl">
+                    Experience the art of craft coffee, roasted to perfection and served with a side of soul.
+                </p>
+<div class="mt-4 flex flex-wrap gap-4">
+<a class="bg-primary text-on-primary px-8 py-4 rounded-full font-bold text-lg neo-border shadow-neo neo-transition neo-hover-effect flex items-center gap-2 uppercase tracking-wide" href="#">
+                        ORDER NOW
+                    </a>
+</div>
+</div>
+<div class="hidden lg:flex justify-end relative h-[600px] w-full">
+<div class="absolute right-0 top-1/2 -translate-y-1/2 w-80 h-[600px] bg-surface-container rounded-[40px] neo-border shadow-neo overflow-hidden flex items-center justify-center">
+<div class="text-on-surface text-center p-6 font-display font-bold text-2xl">
+                        Roast &amp; Revel App UI<br/>
+<span class="text-sm font-sans text-on-surface-variant font-normal">Connected</span>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute bottom-8 right-6 md:right-12 z-20">
+<div class="bg-surface text-on-surface px-6 py-3 rounded-full flex items-center gap-4 shadow-xl neo-border">
+<div class="flex -space-x-3">
+<img alt="User Avatar" class="w-10 h-10 rounded-full border-2 border-surface object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2v3CV3b6VAjl81KKScw6ceEip741Rc5tvxJ4akuk3wVvrOXYZ4ZlSsLT1s1Z-QKUjQuM9ZmxEtc9QBDTUu6XnvrebTnOH-2DiJnbgjIbW0vXOWujSl2oQg-2Yh788vSibsViLSiMSGtjw81ZdOMDjJT5RznbtSy9LYgZOjFsGot8Jy_8nodNvJHAR1FhqJEP9Ph6A3R-j85cOAdL8SFQAvHvBMSXMpxr5O7O1vF77p7ECajiaW5B3"/>
+<img alt="User Avatar" class="w-10 h-10 rounded-full border-2 border-surface object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7mKAB7aNSBlpqndTvsc3BCc73mQFUQXBEF5Aur6GcrF58BKgW1Gd9bSN8i2ggVkG46nNpjEeoZ4T_PIS816zDPPYmOTuzgCLBCntxSZy3QnUpjfF9E9GwfNMuJ0b59cT4Ha9mavl5d3rabCuVgWxOVM_Yv3fAq1PcI4HlMh0U-nI_HCaupy71cRMu4ArK9tdGPKCmx7jV3YaJWc2wag9Qly-q-U8_L7nMQjqgl-hgb3W6FEo0Zv4r"/>
+<img alt="User Avatar" class="w-10 h-10 rounded-full border-2 border-surface object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhrZHzVgnX7cQtL_FwNkqwH0YOg20wUBCosVS5ul9wJ5c8cOvZi9G5TQ0msQKhWY9ZNN90RT8Oxmj8sCL1DqeoDC4XahLsRmmrnEdikIyCTQrPYWPbOUJ7303xIUMSkf8b8GNr32MZS8HBIneh8YGJXAtOh6-rrRyIKGiI135tU7TqWcbaXLdxDkLH81HMZN0_K5rdIckt1zo2yzs-0KHmC4BjnJsaehrGqYLqu5y7JPMriTegnLtA"/>
+</div>
+<span class="font-medium text-sm pr-2">Loved by coffee enthusiasts worldwide</span>
+</div>
+</div>
+</section>
+<section class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+<h2 class="font-display font-bold text-4xl md:text-5xl lg:text-6xl mb-16 tracking-tight text-on-surface dark:text-inverse-on-surface">
+            How To Get Started
+        </h2>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<div class="bg-surface-variant dark:bg-inverse-surface rounded-[32px] p-8 md:p-12 neo-border shadow-neo dark:shadow-neo-dark neo-transition neo-hover-effect flex flex-col justify-between h-full min-h-[400px]">
+<div>
+<div class="w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center font-bold text-xl neo-border mb-8">
+                        1
+                    </div>
+<h3 class="font-display font-bold text-3xl md:text-4xl mb-4 text-on-surface dark:text-inverse-on-surface">
+                        Choose Your Roast
+                    </h3>
+<p class="text-lg text-on-surface-variant dark:text-outline mb-8 max-w-md">
+                        Select from our ethically sourced, small-batch beans
+                    </p>
+</div>
+<div>
+<a class="inline-flex items-center justify-center bg-primary text-on-primary px-8 py-4 rounded-full font-bold text-sm neo-border shadow-neo neo-transition neo-hover-effect uppercase tracking-wide" href="#">
+                        ORDER NOW
+                    </a>
+</div>
+</div>
+<div class="flex flex-col gap-8">
+<div class="bg-surface-container dark:bg-surface-dim rounded-[32px] p-8 neo-border shadow-neo dark:shadow-neo-dark neo-transition neo-hover-effect flex flex-col sm:flex-row sm:items-start gap-6 h-full">
+<div class="w-12 h-12 shrink-0 bg-primary text-on-primary rounded-full flex items-center justify-center font-bold text-xl neo-border">
+                        2
+                    </div>
+<div>
+<h3 class="font-display font-bold text-2xl md:text-3xl mb-2 text-on-surface dark:text-inverse-on-surface">
+                            Select Your Brew
+                        </h3>
+<p class="text-on-surface-variant dark:text-outline">
+                            Pour-over, espresso, or cold brew — your way
+                        </p>
+</div>
+</div>
+<div class="bg-surface-container dark:bg-surface-dim rounded-[32px] p-8 neo-border shadow-neo dark:shadow-neo-dark neo-transition neo-hover-effect flex flex-col sm:flex-row sm:items-start gap-6 h-full">
+<div class="w-12 h-12 shrink-0 bg-primary text-on-primary rounded-full flex items-center justify-center font-bold text-xl neo-border">
+                        3
+                    </div>
+<div>
+<h3 class="font-display font-bold text-2xl md:text-3xl mb-2 text-on-surface dark:text-inverse-on-surface">
+                            Enjoy The Revel
+                        </h3>
+<p class="text-on-surface-variant dark:text-outline">
+                            Find your favorite spot and savor the moment
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-12 px-6 md:px-12 max-w-7xl mx-auto mb-24 relative">
+<div class="bg-surface-variant rounded-[40px] p-8 md:p-16 flex flex-col md:flex-row items-center justify-between gap-12 overflow-hidden relative neo-border shadow-neo neo-transition neo-hover-effect">
+<div class="absolute inset-0 bg-halftone opacity-20 pointer-events-none"></div>
+<div class="flex-1 relative z-10">
+<h2 class="font-display font-extrabold text-5xl md:text-6xl lg:text-7xl text-on-surface mb-6 tracking-tight leading-tight">
+                    Order Your Daily Brew
+                </h2>
+<p class="text-xl md:text-2xl text-on-surface-variant font-medium mb-10 max-w-xl">
+                    Start your day right with a perfect cup of freshly roasted coffee.
+                </p>
+<a class="inline-flex items-center justify-center bg-primary text-on-primary px-8 py-4 rounded-full font-bold text-sm neo-border shadow-neo neo-transition hover:-translate-y-1 hover:shadow-[6px_6px_0px_#281714] dark:hover:shadow-[6px_6px_0px_#ddc1b3] uppercase tracking-wide" href="#">
+                    ORDER NOW
+                </a>
+</div>
+<div class="flex-1 flex justify-center md:justify-end relative z-10 w-full max-w-md">
+<div class="relative w-full aspect-square rounded-full border-4 border-on-surface border-dashed flex items-center justify-center overflow-hidden bg-surface-container">
+<img alt="Person holding coffee" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzyX3jto6DLuIID4FgPeTFIgkw8lX0EKvvXzVp4YKqwsiGw5-IEuTAWQ0bqN9ejJzdcaqTBcNVOOpjC2JHu65Hdm-mxVZVIF5J-Lugm3PBzsBGNlpfpiWPiiH4LEjI6t4SQzxo4fOhTJYLUKJVDThrBcB1-W9bFXeFFNZXz-nWU9m4JGXtOUq0sK0dydypiLKtehWRSAQNs0J_S8aLeTwUapw-SVNqGM2ydRcdFogbJhyIUtf1JUh1"/>
+</div>
+</div>
+</div>
+</section>
+<footer class="w-full border-t-2 border-on-surface dark:border-outline-variant mt-lg bg-surface-container dark:bg-surface-container-low py-lg">
+<div class="flex flex-col md:flex-row justify-between items-center gap-md px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+<div class="flex items-center gap-2 text-on-surface dark:text-on-surface">
+<span class="material-icons text-3xl text-primary">local_cafe</span>
+<span class="font-headline-md text-headline-md font-black">ROAST &amp; REVEL</span>
+</div>
+<div class="flex flex-wrap gap-6 font-body-md text-body-md md:font-label-md md:text-label-md">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-bold" href="#">CONTACT</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-bold" href="#">CAREERS</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-bold" href="#">PRIVACY</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-bold" href="#">TERMS</a>
+</div>
+<div class="font-body-md text-body-md md:font-label-md md:text-label-md text-on-surface-variant dark:text-on-surface-variant">
+                © 2024 ROAST &amp; REVEL COFFEE. STAY BOLD, STAY CAFFEINATED.
+            </div>
+</div>
+</footer>
+<script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-surface', 'shadow-[4px_4px_0px_0px_rgba(40,23,20,1)]');
+                nav.classList.remove('bg-transparent', 'backdrop-blur-sm');
+            } else {
+                nav.classList.remove('bg-surface', 'shadow-[4px_4px_0px_0px_rgba(40,23,20,1)]');
+                nav.classList.add('bg-transparent', 'backdrop-blur-sm');
+            }
+        });
+    </script>
+</body></html>
